@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="UniversalApp.LegendaryLayoutChallenge.BlankPage2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UniversalApp.LegendaryLayoutChallenge"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <StackPanel Margin="10, 20, 0, 0">
+            <TextBlock Text="Lorem Ipsum" FontSize="48"/>
+            <StackPanel Orientation="Horizontal" Margin="10, 20, 0, 0">
+                <TextBlock Width="250" TextWrapping="Wrap" Text="Ut enim benefici liberalesque sumus, non ut exigamus gratiam (neque enim beneficium faeneramur sed natura propensi ad liberalitatem sumus), sic amicitiam non spe mercedis adducti sed quod omnis eius fructus in ipso amore inest, expetendam putamus. Porrecta conati digressi sunt retroque concedentes omne iuventutis robur relictum in sedibus acciverunt. Ut enim benefici liberalesque sumus, non ut exigamus gratiam (neque enim beneficium "/>
+                <TextBlock Width="500" TextWrapping="Wrap">
+                    <Run Text="Ibi victu recreati et quiete, postquam abierat timor, vicos opulentos adorti equestrium adventu cohortium, quae casu propinquabant, nec resistere planitie porrecta conati digressi sunt retroque concedentes omne iuventutis robur relictum in sedibus acciverunt. Ut enim benefici liberalesque sumus, non ut exigamus gratiam (neque enim beneficium faeneramur sed natura propensi ad liberalitatem sumus), sic amicitiam non spe mercedis adducti sed quod omnis eius fructus in ipso amore inest, expetendam putamus.Batnae municipium in Anthemusia conditum Macedonum manu priscorum ab Euphrate flumine brevi spatio disparatur, refertum mercatoribus opulentis, ubi annua sollemnitate prope Septembris initium mensis ad nundinas magna promiscuae fortunae convenit multitudo ad commercanda quae Indi mittunt et Seres aliaque plurima vehi terra marique consueta."/>
+                    <LineBreak/>
+                    <Run/>
+                </TextBlock>
+                <StackPanel VerticalAlignment="Top" Orientation="Vertical">
+                    <Rectangle Fill="Blue" Width="200" Height="200"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <Rectangle Fill="Red" Width="100" Height="100"/>
+                    <Rectangle Fill="Yellow" Width="100" Height="100"/>
+                </StackPanel>
+            </StackPanel>
+
+        </StackPanel>
+        
+    </Grid>
+</Page>

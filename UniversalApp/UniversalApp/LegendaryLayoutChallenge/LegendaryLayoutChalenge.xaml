@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="UniversalApp.LegendaryLayoutChallenge.BlankPage1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UniversalApp.LegendaryLayoutChallenge"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="Lorem Ipsum" FontSize="17"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="0" TextWrapping="Wrap" Text="Alii nullo quaerente vultus severitate adsimulata patrimonia sua in inmensum extollunt, cultorum ut puta feracium multiplicantes annuos fructus, quae a primo ad ultimum solem se abunde iactitant possidere, ignorantes profecto maiores suos, per quos ita magnitudo Romana porrigitur, non divitiis eluxisse sed per bella saevissima, nec opibus nec victu nec indume." FontSize="11"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="1" TextWrapping="Wrap" Text="Batnae municipium in Anthemusia conditum Macedonum manu priscorum ab Euphrate flumine brevi spatio disparatur, refertum mercatoribus opulentis, ubi annua sollemnitate prope Septembris initium mensis ad nundinas magna promiscuae fortunae convenit multitudo ad commercanda quae Indi mittunt et Seres aliaque plurima vehi terra marique consueta.Et olim licet otiosae sint tribus pacataeque centuriae et nulla suffragiorum certamina set Pompiliani redierit securitas temporis, per omnes tamen quotquot sunt partes terrarum, ut domina suscipitur et regina et ubique patrum reverenda cum auctoritate canities populique Romani nomen circumspectum et verecundum."/>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="2">
+            <Rectangle Fill="Blue" Width="150" Height="150" VerticalAlignment="Top"/>
+            <StackPanel Orientation="Vertical">
+                <Rectangle Fill="Red" Width="65" Height="75"/>
+                <Rectangle Fill="Yellow" Width="65" Height="75"/>
+            </StackPanel>
+
+        </StackPanel>
+
+    </Grid>
+</Page>
