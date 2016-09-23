@@ -12,10 +12,11 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Yolo.ViewModels;
 
 // Pour plus d'informations sur le modèle d'élément Page vierge, consultez la page http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
-namespace UniversalApp
+namespace Yolo
 {
     /// <summary>
     /// Une page vide peut être utilisée seule ou constituer une page de destination au sein d'un frame.
@@ -25,29 +26,13 @@ namespace UniversalApp
         public MainPage()
         {
             this.InitializeComponent();
+            this.DataContext = new MainViewModel();
         }
 
-        private void ClickMeButton_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(Object sender, RoutedEventArgs e)
         {
-            ResultTextBlock.Text = "What is xaml ?";
-        }
-
-        private void Page_Loaded(object sender, RoutedEventArgs e)
-        {
-            Button myButton = new Button();
-
-            myButton.Name = "ClickMeButton";
-            myButton.Content = "Click Me !";
-            myButton.Width = 200;
-            myButton.Height = 100;
-            myButton.Margin = new Thickness(20, 20, 0, 0);
-            myButton.HorizontalAlignment = Windows.UI.Xaml.HorizontalAlignment.Left;
-            myButton.VerticalAlignment = Windows.UI.Xaml.VerticalAlignment.Top;
-
-            myButton.Background = new SolidColorBrush(Windows.UI.Colors.Red);
-            myButton.Click += ClickMeButton_Click;
-
-            LayoutGrid.Children.Add(myButton);
+            var dc = DataContext as MainViewModel;
+            dc.TextYolo = "test";
         }
     }
 }
