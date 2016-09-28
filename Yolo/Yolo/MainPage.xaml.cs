@@ -29,39 +29,10 @@ namespace Yolo
             this.DataContext = new MainViewModel();
         }
 
-        public string FirstName
-        {
-            get { return this.FirstName; }
-            set
-            {
-                this.FirstName = value;
-            }
-        }
-
-        public string LastName
-        {
-            get { return this.LastName; }
-            set
-            {
-                this.LastName = value;
-            }
-        }
-
-        public string Email
-        {
-            get { return this.Email; }
-            set
-            {
-                this.Email = value;
-            }
-        }
-
-        private string Info;
-
         private void Button_Click(Object sender, RoutedEventArgs e)
         {
             var dc = DataContext as MainViewModel;
-            dc.TextYolo = "test";
+            //dc.TextYolo = "test";
             
         }
     }

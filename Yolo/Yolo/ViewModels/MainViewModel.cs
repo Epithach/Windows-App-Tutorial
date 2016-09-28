@@ -39,6 +39,50 @@ namespace Yolo.ViewModels
             }
         }
 
+        private string first;
+        public string FirstName
+        {
+            get { return this.first; }
+            set
+            {
+                this.first = value;
+                this.OnPropertyChanged("FirstName");
+            }
+        }
+
+        private string last;
+        public string LastName
+        {
+            get { return this.last; }
+            set
+            {
+                this.last = value;
+                this.OnPropertyChanged("LastName");
+            }
+        }
+
+        private string mail;
+        public string Email
+        {
+            get { return this.mail; }
+            set
+            {
+                this.mail = value;
+                this.OnPropertyChanged("Email");
+            }
+        }
+
+        private string res;
+        public string Result
+        {
+            get { return this.res; }
+            set
+            {
+                this.res = value;
+                this.OnPropertyChanged("Result");
+            }
+        }
+
         private ICommand onButtonClick;
         public ICommand OnButtonClick
         {
@@ -57,6 +101,7 @@ namespace Yolo.ViewModels
         public MainViewModel()
         {
             //this.TextYolo = "Hello world!";
+            this.Result = "";
             this.OnButtonClick = new Command(this.OnButtonAction);
         }
 
@@ -67,6 +112,8 @@ namespace Yolo.ViewModels
         private void OnButtonAction(object param)
         {
             this.TextYolo = "Hello world!";
+            this.Result = FirstName + " " +  LastName + " " + Email;
+
         }
 
         #endregion
